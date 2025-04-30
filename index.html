@@ -1,0 +1,370 @@
+<!doctype html><html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head> <link rel="icon" href="letter-a-inside-a-circle.png" type="image/png">  
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+    <style>* { 
+    margin: 0; 
+    padding: 0; 
+  } 
+
+  body { 
+    background-color: #e0e0e0; 
+    height: 100%; 
+  } 
+  body { 
+    color: #2b2736; 
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                 "Helvetica Neue", Arial, sans-serif; 
+    font-weight: 400; 
+    text-rendering: optimizelegibility; 
+  }
+   
+  a{ 
+  color: #364649; 
+  text-decoration: none; /*altçizgi*/
+} 
+#ana-menu { 
+  color: #fff; 
+  margin-top: 0; 
+  right: 40px; 
+  position: absolute; 
+  display: block; 
+} 
+#ana-menu li { 
+  display: inline; 
+  padding: 0 6px; 
+} 
+#ana-menu a.baslık { 
+  line-height: 48px; 
+  font-size: 14px; 
+  font-weight: bold; 
+  letter-spacing: 0.1px; 
+} 
+
+#ana-menu a { 
+  display: inline-block; 
+  padding: 6px 12px; 
+} 
+
+.dropdown-content { 
+  display: none; 
+
+} 
+#navkutusu { 
+  display: none; 
+
+} 
+.container { 
+  padding: 30px 0 60px 0; 
+  width: 1110px; 
+  margin: 0 auto; 
+position: relative; 
+} 
+
+.container-ana-menu { 
+  padding: 0 40px; 
+} 
+
+#baslik { 
+  position: absolute; 
+  display: block; 
+  top: 15px; 
+} 
+#banner { 
+  height: 50px; 
+  width: 100%; 
+  background-color: #fff; 
+  cursor: default; 
+  
+/*box-shadow: 0 1px 3px #29466126; */
+} 
+
+#banner.transparent { 
+  background-color: #00000000; 
+  box-shadow: none; 
+} 
+
+.buton { 
+  background-color: #00000000; 
+  display: inline-block; 
+  color: #222; 
+  border: 1px solid #855252;
+  padding: 6px 12px; 
+  font-size: 14px; 
+  font-weight: 400; 
+  vertical-align: middle;  
+  border-radius: 4px; 
+  text-align: center;
+   appearance: none;
+}
+.buton:hover { 
+  font-size: 16px; 
+  padding: 8px 16px; 
+  border-radius: 5px;
+}
+
+.buton-upload { 
+  border: 3px solid #333333; 
+  font-size: 21px; 
+  padding: 10px 20px; 
+border-radius: 6px;
+}
+/*upload image butonu*/
+
+ .buton-upload { 
+  transform: translateX(-10px);
+} 
+#mobile-u-t { 
+  display: block; 
+}
+
+.container-code pre { 
+  position: relative; 
+  overflow: hidden; 
+  line-height: 0; 
+  color: #fff; 
+  background: -webkit-linear-gradient(60deg, transparent 5%, #3e3766 100%); 
+  background-color: #26325a; 
+  border-bottom-left-radius: 5px; 
+  border-bottom-right-radius: 5px; 
+  font-size: 11px; 
+  overflow-x: auto; 
+}
+.header-pre { 
+  border-radius: 5px 5px 0 0; 
+  color: #8890b5; 
+  background-color: #575380; 
+  height: 25px; 
+  padding: 0px 10px; 
+}
+
+.nokta { 
+  margin-right: 5px; 
+  border-radius: 6px; 
+  width: 6px; 
+  height: 6px; 
+display: inline-block; 
+}
+.nokta-red { 
+  background-color: #f54e7d; 
+}
+.nokta-yellow { 
+  background-color: #f5bc6b; 
+}
+.nokta-blue { 
+  background-color: #08adf9; 
+}
+
+.kodtext { 
+  display: inline-block; 
+  float: left; 
+  padding-left: 55px; 
+  padding-right: 20px;  
+  font-size: 14px; 
+  line-height: 22px; 
+  color: #fff;
+}
+  #analysis-div{display:none;}  /*detect ai %...*/
+
+h1 {
+    font-size:45px;
+    margin-top:30px;
+    margin-bottom:40px;
+}  
+.subh1{
+    font-size:21px;margin-bottom:30px;
+}
+ .flow-container {
+  display:flex;
+  gap: 50px;
+  align-items:center;
+    justify-content:center;
+    margin:50px auto 60px auto;
+}
+.flow-left img, .flow-right .container-code {
+    width:360px;
+    border-radius:5px;
+    box-shadow: #273748 0px 20px 30px -10px;
+}
+.flow-right .container-code pre {
+    height:calc(340px);
+}
+
+.progress-bar {
+height: 100%;
+width: 0;
+background-color: #746a7d;
+border-radius: 10px;
+text-align: center;
+color: white;
+font-weight: bold;
+        }
+.container-code {
+ display: block;
+   font-family: monospace;
+     background-color: #ccd0d6;
+     padding: 10px;
+      color: white;
+      border-radius: 5px;
+  }
+  .container-code pre code {
+            display: block;
+            white-space: pre-wrap;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<div id="ov-container" class="js-container">
+  <div id="navkutusu">
+    <div id="mobile-nav" class="buton buton-transparent">
+      <a href="#" class="buton">Sign Up</a>
+      <a href="#" class="buton">Log In</a>
+    </div> 
+  </div> 
+<nav id="banner" class="transparent">
+    <div class="container-ana-menu">
+      <a id="baslik">
+        <img alt="logo" src="Adsız.png" width="220" height="150" style="position: relative; top: -50px; left:-30px;" />
+      </a>
+
+      <ul id="ana-menu">
+        <li class="dropdown">
+          <a href="#" class="dropdown-baslik baslık">Home</a>
+          <div class="dropdown-content">
+            <ul class="dropdown-content-list"></ul>
+          </div>
+        </li>
+        <li><a href="#" class="baslık">Products</a></li>
+        <li><a href="#" class="baslık">Documentation</a></li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-baslik baslık">Pricing</a>
+          <div class="dropdown-content" style="left:-50px;">
+            <ul class="dropdown-content-list">
+              <li><a href="#"><div class="dd-prod-baslik"></div></a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="buton buton-transparent">Log In</a></li>
+        <li><a href="#" class="buton buton-transparent">Sign Up</a></li>
+      </ul> 
+    </div> 
+  </nav>
+
+  <div class="container" style="text-align: center;" id="presentation-div">
+    <h1>Scale up detection of AI-generated images effortlessly</h1>
+    <p class="subh1">Automatically detect images from well-known AI generators with our AI image detector, no watermarks required.</p>
+
+    <div class="flow-container">
+      <div class="flow-left">
+        <img id="preview-img" src="https://cdn.pixabay.com/photo/2023/09/25/03/27/ai-generated-8274116_1280.png" alt="Image preview" style="max-height: 380px; box-shadow: #26394d 0px 10px 30px -10px; margin-left: 30px;">
+      </div>
+      <div class="flow-center"></div>
+      <div class="flow-right">
+        <div class="container-code" style="text-align: left; -webkit-font-smoothing: antialiased;">
+          <div class="header-pre">
+            <span class="nokta nokta-red"></span>
+            <span class="nokta nokta-yellow"></span>
+            <span class="nokta nokta-blue"></span>
+          </div>
+          <div data-language="json" class="tab" style="display: block">
+            <pre><code class="kodtext">
+........................
+..........................
+........................
+.......................
+...........................
+........................................
+  <span style="color:#3cdb67">"ai-generated": <b>95%</b></span>
+..........................
+......................
+.....................
+.........................
+........................
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <input type="file" id="image-upload" accept="image/*" style="display: none;" onchange="previewImage(event)">
+    <a href="#" class="buton buton-upload buton-purple upload-trigger" onclick="document.getElementById('image-upload').click(); return false;">UPLOAD IMAGE</a>
+  </div> 
+
+  <div id="progress-container" class="container" style="display: none;">
+    <h1>AI Detection Result</h1>
+    <div class="progress-bar-container" id="progress-bar-container">
+      <div id="progress-bar" class="progress-bar">0%</div>
+    </div>
+    <p id="ai-result-text">AI Generated: <span id="ai-percentage"></span>%</p>
+  </div> 
+
+</div> 
+
+<script>
+    // Fotoğraf yükleme ve görüntüleme fonk.
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function() {
+            var output = document.getElementById('preview-img');
+            output.src = reader.result; // Yüklenen fotoğrafın kaynağını güncelleme
+
+         // JSON kısmını kaldırıp progress barı gösteriyo
+         document.querySelector('.container-code').style.display = 'none'; // kodu gizle
+            document.getElementById('progress-container').style.display = 'block'; // Progress bar'ı göster
+
+            // AI yüzdesini simüle et
+            simulateProgressBar();
+        }
+        reader.readAsDataURL(event.target.files[0]); // Yüklenen fotoğrafı okuma
+    }
+    // Progress Bar Güncelleme Fonksiyonu (AI yüzdesini simüle et)
+    function simulateProgressBar() {
+        var progressBar = document.getElementById('progress-bar');
+        var aiPercentage = 95; // AI yüzdesi
+        var width = 0;
+
+        // Progress bar'ın içinde animasyon ile yüzdeleri arttır
+        var interval = setInterval(function() {
+            if (width >= aiPercentage) {
+                clearInterval(interval);
+                document.getElementById('ai-percentage').textContent = aiPercentage; // AI yüzdesini göster
+            } else {
+                width++;
+                progressBar.style.width = width + '%';
+                progressBar.textContent = width + '%';
+            }
+        }, 10); // Her 10ms'de bir artış
+    }
+</script>
+</body>
+</html>  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+       
+
+
+
+
+   
+
+   
+
+

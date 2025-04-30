@@ -1,0 +1,56 @@
+.dropdown-title svg {
+    visibility: hidden; 
+    width: 0;
+}
+
+#ana-menu {
+    text-align: left;
+}
+
+#ana-menu li {
+    display: inline-block;
+    margin-right: 30px; 
+}
+
+#ana-menu li a {
+    color: rgb(0, 0, 0); 
+    font-size: 16px; 
+    text-decoration: none; 
+}
+
+body {
+    background: linear-gradient(45deg, #787474, #f5ebed);
+    animation: gradient 6s infinite alternate;
+}
+@keyframes gradient {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+.buton {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.buton:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* Fotoğraf Alanı */
+#left-pane {
+    display: flex;
+    justify-content: flex-start; /* Fotoğrafı sola hizalar */
+    margin-right: 20px; /* Sağ tarafa küçük bir boşluk bırakır */
+}
+
+#preview-img { 
+    max-height: 350px;
+    box-shadow: #26394d 0px 10px 30px -10px;
+    margin-left: 150px; /* seçilen fotoğrafı biraz daha sağa kaydır */
+}
+
